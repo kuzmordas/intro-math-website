@@ -1,0 +1,26 @@
+.blog {
+    &__year {
+        color: gray;
+        margin: 50px 0 20px 50px;
+        font-size: 22px;
+    }
+    &__item {
+        margin: 0 0 20px 100px;
+
+    }
+    &__theme {
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        text-decoration: underline gray;
+    }
+    &__date {
+        color: gray;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    &__theme:hover {
+        color: hsl(45,98%,77%);
+        text-decoration: underline;
+    }
+}

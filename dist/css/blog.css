@@ -1,0 +1,23 @@
+.blog__year {
+  color: gray;
+  margin: 50px 0 20px 50px;
+  font-size: 22px; }
+
+.blog__item {
+  margin: 0 0 20px 100px; }
+
+.blog__theme {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  -webkit-text-decoration: underline gray;
+          text-decoration: underline gray; }
+
+.blog__date {
+  color: gray;
+  font-size: 18px;
+  margin-left: 10px; }
+
+.blog__theme:hover {
+  color: #fee18b;
+  text-decoration: underline; }

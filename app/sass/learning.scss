@@ -1,0 +1,19 @@
+.learning {
+    &__header {
+        margin: 0 0 20px 0;
+        color: gray;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    &__disciplines {
+        color: white;
+        font-size: 20px;
+    }
+    &__discipline {
+        margin-bottom: 10px;
+    }
+    &__discipline:hover {
+        cursor: pointer;
+        color: hsl(45,98%,77%);
+    }
+}

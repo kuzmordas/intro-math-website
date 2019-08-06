@@ -1,0 +1,16 @@
+.content {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    min-width: 820px;
+    &__wrapper {
+        width: 1000px;
+    }
+    &__block {
+        margin-bottom: 50px;
+        &_flex {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
