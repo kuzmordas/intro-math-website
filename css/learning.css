@@ -1,0 +1,16 @@
+.learning__header {
+  margin: 0 0 20px 0;
+  color: gray;
+  font-size: 22px;
+  text-decoration: underline; }
+
+.learning__disciplines {
+  color: white;
+  font-size: 20px; }
+
+.learning__discipline {
+  margin-bottom: 10px; }
+
+.learning__discipline:hover {
+  cursor: pointer;
+  color: #fee18b; }

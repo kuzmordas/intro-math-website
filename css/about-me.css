@@ -1,0 +1,48 @@
+.about-me {
+  height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .about-me__photo {
+    margin-right: 20px;
+    width: 350px;
+    height: 350px;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    background: url("../img/photo.jpg") no-repeat center/cover; }
+  .about-me__info-wrapper {
+    margin: 10px; }
+  .about-me__info {
+    border: 2px solid white;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    overflow-y: scroll;
+    color: white;
+    max-width: 550px;
+    height: 350px; }
+  .about-me__info::-webkit-scrollbar {
+    width: 10px; }
+  .about-me__info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0;
+            box-shadow: inset 0 0 0;
+    -webkit-border-radius: 8px;
+            border-radius: 8px; }
+  .about-me__info::-webkit-scrollbar-thumb {
+    background: white;
+    -webkit-border-radius: 8px;
+            border-radius: 8px; }
+  .about-me__info::-webkit-scrollbar-thumb:hover {
+    background: #fee18b; }
+
+.text {
+  margin: 5px 15px 0 15px;
+  font-size: 18px;
+  text-align: justify; }
