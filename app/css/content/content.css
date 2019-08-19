@@ -1,22 +1,11 @@
 .content {
-  height: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  min-width: 820px; }
-  .content__wrapper {
-    width: 1000px; }
-  .content__block {
-    margin-bottom: 50px; }
-    .content__block_flex {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; }
+  display: flex; }
+  .content__navbar {
+    min-width: 300px;
+    height: 100%; }
+  .content__main {
+    width: 100%;
+    background-color: yellow; }

@@ -1,5 +1,12 @@
 .page {
   height: 100%;
   margin: 0;
-  padding: 0;
-  background-color: #010057; }
+  padding: 0; }
+  .page__header {
+    background-color: green;
+    height: 10%; }
+  .page__content {
+    height: 80%; }
+  .page__footer {
+    background-color: blue;
+    height: 10%; }

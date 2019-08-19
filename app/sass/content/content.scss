@@ -1,16 +1,16 @@
 .content {
-    height: auto;
+
     display: flex;
-    justify-content: space-around;
-    min-width: 820px;
-    &__wrapper {
-        width: 1000px;
+
+    &__navbar {
+        min-width: 300px;
+        height: 100%;
+        // background-color: red;
     }
-    &__block {
-        margin-bottom: 50px;
-        &_flex {
-            display: flex;
-            justify-content: space-around;
-        }
+
+    &__main {
+        width: 100%;
+        background-color: yellow;
     }
+
 }
