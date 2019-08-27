@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MathMe</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/header/header.css">
@@ -17,36 +18,48 @@
     <link rel="stylesheet" href="css/navbar/navbar.css">
 </head>
 <body class="page">
-    <header class="page__header">
-        Provide math to your busyness
+    <header class="page__header header">
+        <p class="header__math-symbol">&#8747;</p>
+        <h1 class="header__text" id="header-text"></h1>
     </header>
     <div class="page__content content">
         <nav class="content__navbar navbar">
-            <h3>
-                Options
-            </h3>
-            <ul class="navbar__items">
-                <li class="navbar__item">
-                    Intro
-                </li>
-                <li class="navbar__item">
-                    Our projects
-                </li>
-                <li class="navbar__item">
-                    Our team
-                </li>
-                <li class="navbar__item">
-                    Our offers
-                </li>
-            </ul>
+            <a id="content-1" class="navbar__item" name="about-us">
+                <span>ABOUT US</span>
+            </a>
+            <a id="content-2" class="navbar__item" name="what-we-can">
+                <span>WHAT WE CAN</span>
+            </a>
+            <a id="content-3" class="navbar__item" name="our-projects">
+                <span>OUR PROJECTS</span>
+            </a>
+            <a id="content-4" class="navbar__item" name="team">
+                <span>TEAM</span>
+            </a>
         </nav>
-        <main class="content__main">
-            content
+        <main class="content__wrapper">
+            <section id="about-us" class="content__section section">
+                <h3 class="section__header">Who we are?</h3>
+                <p class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                </p>
+                <h3 class="section__header">What our goals?</h3>
+                <p class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                </p>
+                <h3 class="section__header">Why we?</h3>
+                <p class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                </p>
+            </section>
+            <section id="what-we-can" class="content__section hidden"></section>
+            <section id="our-projects" class="content__section hidden"></section>
+            <section id="team" class="content__section hidden"></section>
         </main>
     </div>
-    <footer class="page__footer">
-        contacts
-    </footer>
-    <!-- <script src="js/utils.js"></script> -->
+    <footer id="particles-js" class="page__footer"></footer>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

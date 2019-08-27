@@ -2,9 +2,9 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 
     &__header {
-        background-color: green;
         height: 10%;
     }
 
@@ -13,7 +13,6 @@
     }
 
     &__footer {
-        background-color: blue;
-        height: 10%;
+        height: 9%;
     }
 }

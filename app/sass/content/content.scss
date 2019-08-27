@@ -1,16 +1,44 @@
 .content {
-
-    display: flex;
-
     &__navbar {
-        min-width: 300px;
-        height: 100%;
-        // background-color: red;
+        height: 40px;
     }
 
-    &__main {
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
         width: 100%;
-        background-color: yellow;
+        height: calc(100% - 40px);
     }
 
+    &__section {
+        width: 100%;
+        max-width: 1400px;
+        height: 100%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.section {
+
+    &__header {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    &__text {
+        margin-top: 0;
+    }
+}
+
+
+
+#our-projects {
+    background-color: green;
+}
+
+#team {
+    background-color: blue;
 }

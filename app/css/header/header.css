@@ -1,31 +1,17 @@
 .header {
-  height: 300px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .header__lines {
-    stroke-width: 3px; }
-  .header__pointer {
-    /*offset-path: path("M 10 190 Q120 190 150 10");*/
-    stroke: #fee18b;
-    fill: #fee18b; }
-  .header__quadratic {
-    fill-opacity: 0.0;
-    stroke-width: 2px; }
-  .header__menu-item {
-    fill: white;
-    font: normal 20px sans-serif; }
-  .header__menu-item:hover {
-    cursor: pointer;
-    fill: #fee18b; }
+  .header__math-symbol {
+    margin: 0 0 0 40px;
+    font-size: 300%; }
+  .header__text {
+    margin: 0 0 0 20px; }
 
 @-webkit-keyframes alongPath {
   100% {

@@ -1,12 +1,11 @@
 .page {
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
   .page__header {
-    background-color: green;
     height: 10%; }
   .page__content {
     height: 80%; }
   .page__footer {
-    background-color: blue;
-    height: 10%; }
+    height: 9%; }

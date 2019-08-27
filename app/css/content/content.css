@@ -1,11 +1,35 @@
-.content {
+.content__navbar {
+  height: 40px; }
+
+.content__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
-  .content__navbar {
-    min-width: 300px;
-    height: 100%; }
-  .content__main {
-    width: 100%;
-    background-color: yellow; }
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+  height: -webkit-calc(100% - 40px);
+  height: calc(100% - 40px); }
+
+.content__section {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%; }
+
+.hidden {
+  display: none; }
+
+.section__header {
+  font-size: 20px;
+  margin-bottom: 0; }
+
+.section__text {
+  margin-top: 0; }
+
+#our-projects {
+  background-color: green; }
+
+#team {
+  background-color: blue; }

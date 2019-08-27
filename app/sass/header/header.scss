@@ -1,27 +1,15 @@
 .header {
-    height: 300px;
+
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    &__lines {
-        stroke-width: 3px;
+
+    &__math-symbol {
+        margin: 0 0 0 40px;
+        font-size: 300%;
     }
-    &__pointer {
-        /*offset-path: path("M 10 190 Q120 190 150 10");*/
-        stroke: hsl(45,98%,77%);
-        fill: hsl(45,98%,77%);
-    }
-    &__quadratic {
-        fill-opacity: 0.0;
-        stroke-width: 2px;
-    }
-    &__menu-item {
-        fill: white;
-        font: normal 20px sans-serif;
-    }
-    &__menu-item:hover {
-        cursor: pointer;
-        fill: hsl(45,98%,77%);
+
+    &__text {
+        margin: 0 0 0 20px;
     }
 }
 

@@ -1,5 +1,7 @@
 .navbar {
 
+    display: flex;
+
     &__items {
         margin: 0;
         padding: 0;
@@ -7,15 +9,19 @@
     }
 
     &__item {
-        padding-left: 40px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
         height: 40px;
+        text-align: center;
         line-height: 40px;
+        text-decoration: none;
+        color: black;
+        margin: 0 20px;
 
         &:hover {
-            cursor: pointer;
-            background-color: gray;
+            text-decoration: underline;
         }
     }
-
-
 }
