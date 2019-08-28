@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/content/what-we-can.css">
+    <link rel="stylesheet" href="css/content/svg.css">
 </head>
 <body class="page">
     <header class="page__header header">
@@ -54,14 +55,41 @@
                 </p>
             </section>
             <section id="what-we-can" class="content__section content__section_radio hidden">
+                <svg class="svg__menu" width="400" height="400">
+                    <defs>
+                        <linearGradient id="a" x1="10" y1="0" x2="10" y2="310" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" offset="1%" />
+                            <stop stop-color="black" offset="40%" />
+                        </linearGradient>
+                        <linearGradient id="b" x1="0" y1="290" x2="300" y2="290" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="black" offset="60%"/>
+                            <stop stop-color="white" offset="99%"/>
+                        </linearGradient>
+                        <linearGradient id="grad1">
+                            <stop offset="90%" stop-color="black"/>
+                            <stop offset="100%" stop-color="black" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                    <line class="svg__lines" x1="10" y1="0" x2="10" y2="310" stroke="url(#a)" />
+                    <line class="svg__lines" x1="0" y1="290" x2="300" y2="290" stroke="url(#b)"/>
+                    <path class="svg__quadratic"  stroke="url(#grad1)" d="M10,290 Q80,260 100,30"/>
+                    <text class="svg__menu-item" x="110" y="100">Optimization</text>
+                    <text class="svg__menu-item" x="100" y="150">Programming</text>
+                    <text class="svg__menu-item" x="90" y="200">Calculations</text>
+                    <text class="svg__menu-item" x="75" y="250">Education</text>
+                    <circle class="svg__pointer" cx="10" cy="290" r="5"/>
+                </svg>
                 <div class="what-we-can">
-                    <input class="controls-input" type="radio" name="point" id="item-1" checked>
-                    <input class="controls-input" type="radio" name="point" id="item-2">
-                    <input class="controls-input" type="radio" name="point" id="item-3">
-                    <input class="controls-input" type="radio" name="point" id="item-4">
+                    <input class="controls-input hidden" type="radio" name="point" id="item-1" checked>
+                    <input class="controls-input hidden" type="radio" name="point" id="item-2">
+                    <input class="controls-input hidden" type="radio" name="point" id="item-3">
+                    <input class="controls-input hidden" type="radio" name="point" id="item-4">
                     <div class="what-we-can__wrapper">
                         <div class="what-we-can__item">
                             <h3 class="section__header">Education</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
                             <p class="section__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
                             </p>
@@ -77,9 +105,15 @@
                             <p class="section__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
                             </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
                         </div>
                         <div class="what-we-can__item">
-                            <h3 class="section__header">Programming and Automation</h3>
+                            <h3 class="section__header">Programming</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
                             <p class="section__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
                             </p>
@@ -89,6 +123,9 @@
                         </div>
                         <div class="what-we-can__item">
                             <h3 class="section__header">Optimization</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
                             <p class="section__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
                             </p>

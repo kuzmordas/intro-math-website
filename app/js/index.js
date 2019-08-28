@@ -1,3 +1,57 @@
+function getElementByClass(name) {
+	return document.getElementsByClassName(name)[0];
+}
+
+let menuItems = Array.from(document.getElementsByClassName('svg__menu-item'))
+  .sort((a, b) => b.y.baseVal[0].value - a.y.baseVal[0].value);
+
+let pointer = getElementByClass('svg__pointer');
+let path = getElementByClass('svg__quadratic');
+let curveLength = path.getTotalLength();
+
+let params = {
+	0: 0.22,
+	1: 0.41,
+	2: 0.60,
+	3: 0.76
+}
+
+let counter = 0.0;
+let direction = true;
+let param = 0.0;
+
+function movePoint() {
+	if (direction) {
+		if (counter < param) {
+			counter += 0.015;
+			pointer.setAttribute("cx", path.getPointAtLength(counter * curveLength).x);
+			pointer.setAttribute("cy", path.getPointAtLength(counter * curveLength).y);
+		}
+	} else if (counter > param) {
+		counter -= 0.015;
+		pointer.setAttribute("cx", path.getPointAtLength(counter * curveLength).x);
+		pointer.setAttribute("cy", path.getPointAtLength(counter * curveLength).y);
+	}
+}
+
+setInterval(() => movePoint(), 20);
+
+for (let i = 0; i < menuItems.length; i++) {
+	menuItems[i].addEventListener('mouseover', () => {
+		direction = (params[i] > counter) ? true : false;
+		param = params[i];
+	});
+	menuItems[i].addEventListener("mouseout", () => {
+		direction = false;
+		param = 0.0;
+	});
+	menuItems[i].addEventListener('click', () => {
+		var e =	document.getElementById(`item-${i + 1}`);
+		if (e) e.checked = true;
+	});
+}
+
+
 let i = 0;
 const headerText = 'provide Math to your Business';
 textElement = document.getElementById('header-text');
