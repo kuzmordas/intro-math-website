@@ -14,7 +14,15 @@
         width: 100%;
         max-width: 1400px;
         height: 100%;
+
+        &_radio {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
     }
+
+
 }
 
 .hidden {
@@ -25,15 +33,13 @@
 
     &__header {
         font-size: 20px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 
     &__text {
         margin-top: 0;
     }
 }
-
-
 
 #our-projects {
     background-color: green;

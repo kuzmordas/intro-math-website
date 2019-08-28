@@ -1,0 +1,37 @@
+.what-we-can {
+
+    width: 1000px;
+    overflow-x: hidden;
+
+    &__wrapper {
+        display: flex;
+        position: relative;
+        width: 4000px;
+    }
+
+    &__item {
+
+        height: 500px;
+        width: 1000px;
+    }
+}
+
+.what-we-can #item-1:checked ~ .what-we-can__wrapper {
+    left: 0;
+    transition: 0.5s;
+}
+
+.what-we-can #item-2:checked ~ .what-we-can__wrapper {
+  left: -1000px;
+  transition: 0.5s;
+}
+
+.what-we-can #item-3:checked ~ .what-we-can__wrapper {
+  left: -2000px;
+  transition: 0.5s;
+}
+
+.what-we-can #item-4:checked ~ .what-we-can__wrapper {
+  left: -3000px;
+  transition: 0.5s;
+}
