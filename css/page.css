@@ -2,4 +2,18 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #010057; }
+  font-family: 'Roboto', sans-serif; }
+  .page__header {
+    height: 10%; }
+  .page__content {
+    height: 80%; }
+  .page__footer {
+    height: 9.5%; }
+  .page__contacts {
+    position: absolute;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 2.5%; }

@@ -12,11 +12,3 @@
     font-size: 300%; }
   .header__text {
     margin: 0 0 0 20px; }
-
-@-webkit-keyframes alongPath {
-  100% {
-    offset-distance: 100.0%; } }
-
-@keyframes alongPath {
-  100% {
-    offset-distance: 100.0%; } }
