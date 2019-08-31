@@ -13,6 +13,16 @@
     }
 
     &__footer {
-        height: 9%;
+        height: 9.5%;
+    }
+
+    &__contacts {
+        position: absolute;
+        z-index: 5;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 2.5%;
     }
 }

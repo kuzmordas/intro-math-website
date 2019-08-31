@@ -2,11 +2,11 @@ function getElementByClass(name) {
 	return document.getElementsByClassName(name)[0];
 }
 
-let menuItems = Array.from(document.getElementsByClassName('svg__menu-item'))
+let menuItems = Array.from(document.getElementsByClassName('svg-navbar__menu-item'))
   .sort((a, b) => b.y.baseVal[0].value - a.y.baseVal[0].value);
 
-let pointer = getElementByClass('svg__pointer');
-let path = getElementByClass('svg__quadratic');
+let pointer = getElementByClass('svg-navbar__pointer');
+let path = getElementByClass('svg-navbar__quadratic');
 let curveLength = path.getTotalLength();
 
 let params = {
@@ -84,4 +84,24 @@ function onActiveSectionChange(name) {
 sections.forEach(x => {
   const e = document.getElementsByName(x)[0];
   e.addEventListener('click', () => onActiveSectionChange(x));
-})
+});
+
+const members = [
+  'member-1',
+  'member-2',
+  'member-3'
+];
+
+function onActiveMemberChange(name) {
+	members.forEach(x => {
+	  const e = document.getElementById(x);
+	  (x !== name)
+		? e.classList.add('hidden')
+		: e.classList.remove('hidden')
+	});
+  }
+
+members.forEach(x => {
+  const e = document.getElementsByName(x)[0];
+  e.addEventListener('click', () => onActiveMemberChange(x));
+});

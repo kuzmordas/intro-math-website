@@ -1,0 +1,24 @@
+.team {
+
+    &__image-wrapper {
+        margin: 50px auto;
+        width: 900px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__avatar-wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__avatar-image {
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__avatar-name {
+        font-weight: bold;
+    }
+}

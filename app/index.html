@@ -8,16 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/page.css">
-    <link rel="stylesheet" href="css/header/header.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
-    <link rel="stylesheet" href="css/content/content.css">
-    <link rel="stylesheet" href="css/about-me.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/learning.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content/content.css">
+    <link rel="stylesheet" href="css/content/svg-navbar.css">
     <link rel="stylesheet" href="css/content/what-we-can.css">
-    <link rel="stylesheet" href="css/content/svg.css">
+    <link rel="stylesheet" href="css/content/team.css">
 </head>
 <body class="page">
     <header class="page__header header">
@@ -55,7 +52,7 @@
                 </p>
             </section>
             <section id="what-we-can" class="content__section content__section_radio hidden">
-                <svg class="svg__menu" width="400" height="400">
+                <svg class="svg-navbar__menu" width="400" height="400">
                     <defs>
                         <linearGradient id="a" x1="10" y1="0" x2="10" y2="310" gradientUnits="userSpaceOnUse">
                             <stop stop-color="white" offset="1%" />
@@ -70,14 +67,14 @@
                             <stop offset="100%" stop-color="black" stop-opacity="0" />
                         </linearGradient>
                     </defs>
-                    <line class="svg__lines" x1="10" y1="0" x2="10" y2="310" stroke="url(#a)" />
-                    <line class="svg__lines" x1="0" y1="290" x2="300" y2="290" stroke="url(#b)"/>
-                    <path class="svg__quadratic"  stroke="url(#grad1)" d="M10,290 Q80,260 100,30"/>
-                    <text class="svg__menu-item" x="110" y="100">Optimization</text>
-                    <text class="svg__menu-item" x="100" y="150">Programming</text>
-                    <text class="svg__menu-item" x="90" y="200">Calculations</text>
-                    <text class="svg__menu-item" x="75" y="250">Education</text>
-                    <circle class="svg__pointer" cx="10" cy="290" r="5"/>
+                    <line class="svg-navbar__lines" x1="10" y1="0" x2="10" y2="310" stroke="url(#a)" />
+                    <line class="svg-navbar__lines" x1="0" y1="290" x2="300" y2="290" stroke="url(#b)"/>
+                    <path class="svg-navbar__quadratic"  stroke="url(#grad1)" d="M10,290 Q80,260 100,30"/>
+                    <text class="svg-navbar__menu-item" x="110" y="100">Optimization</text>
+                    <text class="svg-navbar__menu-item" x="100" y="150">Programming</text>
+                    <text class="svg-navbar__menu-item" x="90" y="200">Calculations</text>
+                    <text class="svg-navbar__menu-item" x="75" y="250">Education</text>
+                    <circle class="svg-navbar__pointer" cx="10" cy="290" r="5"/>
                 </svg>
                 <div class="what-we-can">
                     <input class="controls-input hidden" type="radio" name="point" id="item-1" checked>
@@ -137,8 +134,47 @@
                 </div>
             </section>
             <section id="our-projects" class="content__section hidden"></section>
-            <section id="team" class="content__section hidden"></section>
+            <section id="team" class="content__section section hidden">
+                <div class="team">
+                    <div class="team__wrapper">
+                        <div class="team__image-wrapper">
+                            <div class="team__avatar-wrapper">
+                                <img name="member-1" class="team__avatar-image" width="250px" height="250px" src="./img/Aleksandr L.jpg" alt="Aleksandr L.">
+                                <p class="team__avatar-name">Aleksandr Lazovskiy</p>
+                            </div>
+                            <div class="team__avatar-wrapper team__avatar-wrapper_margined">
+                                <img name="member-2" class="team__avatar-image" width="250px" height="250px" src="./img/Ahmad.PNG" alt="Ahmad">
+                                <p class="team__avatar-name">Ahmad Bashirov</p>
+                            </div>
+                            <div class="team__avatar-wrapper team__avatar-wrapper_margined">
+                                <img name="member-3" class="team__avatar-image" width="250px" height="250px" src="./img/Aleksandr K.PNG" alt="Aleksandr K.">
+                                <p class="team__avatar-name">Aleksandr Kuznetsov</p>
+                            </div>
+                        </div>
+                        <p id="member-1" class="team__member-info">
+                            Aleksandr Lazovskiy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                        </p>
+                        <p id="member-2" class="team__member-info hidden">
+                            Ahmad Bashirov. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                        </p>
+                        <p id="member-3" class="team__member-info hidden">
+                            Aleksandr Kuznetsov. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
+    </div>
+    <div class="page__contacts contacts">
+        <a class="contacts__link" href="">
+            <img src="./img/email-icon.svg" width="40px" height="40px" alt="telegram">
+        </a>
+        <a class="contacts__link contacts__link_with-margin" href="">
+            <img src="./img/telegram-icon.svg" width="40px" height="40px" alt="telegram">
+        </a>
+        <a class="contacts__link contacts__link_with-margin" href="">
+            <img src="./img/twitter-icon.svg" width="40px" height="40px" alt="telegram">
+        </a>
     </div>
     <footer id="particles-js" class="page__footer"></footer>
     <script src="js/particles.min.js"></script>

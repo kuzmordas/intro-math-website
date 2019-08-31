@@ -1,46 +1,14 @@
 .contacts {
-    color: white;
-    font-size: 20px;
-    &__header {
-        width: 100px;
+    display: flex;
+    width: 150px;
+
+    &__link {
         display: block;
-        margin: 0 auto 20px auto;
-        color: gray;
-        font-size: 22px;
-        text-decoration: underline;
-    }
-    &__contact {
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0 10px 10px 0;
-    }
-    &__img {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-radius: 15px;
-        &_telegram {
-            background: white url("../img/telegramm-icon.png") no-repeat center;
-            background-size: 25px;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        &_with-margin {
+            margin-left: 30px;
         }
-        &_facebook {
-            background: white url("../img/facebook-icon.png") no-repeat center;
-            background-size: 25px;
-        }
-        &_twitter {
-            background: white url("../img/twitter-icon.png") no-repeat center;
-            background-size: 25px;
-        }
-    }
-    &__info {
-        margin-left: 10px;
-    }
-    &__info:hover {
-        cursor: pointer;
-        color: hsl(45,98%,77%);
-    }
-    &__info:hover ~ &__img {
-        background-color: hsl(45,98%,77%);
     }
 }
