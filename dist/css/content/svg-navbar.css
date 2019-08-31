@@ -1,0 +1,27 @@
+.svg-navbar__lines {
+  stroke-width: 3px; }
+
+.svg-navbar__pointer {
+  stroke: black;
+  fill: black; }
+
+.svg-navbar__quadratic {
+  fill-opacity: 0.0;
+  stroke-width: 2px; }
+
+.svg-navbar__menu-item {
+  fill: black;
+  font-size: 20px;
+  font-weight: bold; }
+
+.svg-navbar__menu-item:hover {
+  cursor: pointer;
+  text-decoration: underline; }
+
+@-webkit-keyframes alongPath {
+  100% {
+    offset-distance: 100.0%; } }
+
+@keyframes alongPath {
+  100% {
+    offset-distance: 100.0%; } }
