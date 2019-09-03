@@ -1,49 +1,13 @@
 .contacts {
-  color: white;
-  font-size: 20px; }
-  .contacts__header {
-    width: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px; }
+  .contacts__link {
     display: block;
-    margin: 0 auto 20px auto;
-    color: gray;
-    font-size: 22px;
-    text-decoration: underline; }
-  .contacts__contact {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 10px 10px 0; }
-  .contacts__img {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    -webkit-border-radius: 15px;
-            border-radius: 15px; }
-    .contacts__img_telegram {
-      background: white url("../img/telegramm-icon.png") no-repeat center;
-      -webkit-background-size: 25px 25px;
-              background-size: 25px; }
-    .contacts__img_facebook {
-      background: white url("../img/facebook-icon.png") no-repeat center;
-      -webkit-background-size: 25px 25px;
-              background-size: 25px; }
-    .contacts__img_twitter {
-      background: white url("../img/twitter-icon.png") no-repeat center;
-      -webkit-background-size: 25px 25px;
-              background-size: 25px; }
-  .contacts__info {
-    margin-left: 10px; }
-  .contacts__info:hover {
-    cursor: pointer;
-    color: #fee18b; }
-  .contacts__info:hover ~ .contacts__img {
-    background-color: #fee18b; }
+    height: 40px;
+    width: 40px;
+    background-color: white; }
+    .contacts__link_with-margin {
+      margin-left: 30px; }

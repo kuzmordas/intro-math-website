@@ -1,47 +1,19 @@
-function getElementByClass (className) {
-    return document.getElementsByClassName(className)[0];
+function getElementByClass(name) {
+	return document.getElementsByClassName(name)[0];
 }
 
-let aboutMeRef = document.getElementById('blog');
-let learningRef = document.getElementById('learning');
-let contactsRef = document.getElementById('contacts');
+let menuItems = Array.from(document.getElementsByClassName('svg-navbar__menu-item'))
+  .sort((a, b) => b.y.baseVal[0].value - a.y.baseVal[0].value);
 
-aboutMeRef.addEventListener('click', () => {
-	let timerID = setInterval(function() {
-		window.scrollBy(0, 10);
-		if( window.pageYOffset >= 720)
-			clearInterval(timerID);
-	}, 1);
-});
-
-learningRef.addEventListener('click', () => {
-	let timerID = setInterval(function() {
-		window.scrollBy(0, 10);
-		if( window.pageYOffset >= 1000)
-			clearInterval(timerID);
-	}, 1);
-});
-
-contactsRef.addEventListener('click', () => {
-	let timerID = setInterval(function() {
-		window.scrollBy(0, 10);
-		if( window.pageYOffset >= 1100)
-			clearInterval(timerID);
-	}, 1);
-});
-
-
-
-
-let menuItems = Array.from(document.getElementsByClassName('header__menu-item'));
-let pointer = getElementByClass('header__pointer');
-let path = getElementByClass('header__quadratic');
+let pointer = getElementByClass('svg-navbar__pointer');
+let path = getElementByClass('svg-navbar__quadratic');
 let curveLength = path.getTotalLength();
 
 let params = {
-	0: 0.70,
-	1: 0.53,
-	2: 0.32
+	0: 0.22,
+	1: 0.41,
+	2: 0.60,
+	3: 0.76
 }
 
 let counter = 0.0;
@@ -73,4 +45,63 @@ for (let i = 0; i < menuItems.length; i++) {
 		direction = false;
 		param = 0.0;
 	});
+	menuItems[i].addEventListener('click', () => {
+		var e =	document.getElementById(`item-${i + 1}`);
+		if (e) e.checked = true;
+	});
 }
+
+
+let i = 0;
+const headerText = 'provide Math to your Business';
+textElement = document.getElementById('header-text');
+
+function typeWriter() {
+  if (i === headerText.length) return;
+  textElement.innerHTML += headerText.charAt(i);
+  i++;
+  setTimeout(typeWriter, 100);
+}
+
+setTimeout(typeWriter, 100);
+
+const sections = [
+  'about-us',
+  'what-we-can',
+  'our-projects',
+  'team'
+];
+
+function onActiveSectionChange(name) {
+  sections.forEach(x => {
+    const e = document.getElementById(x);
+    (x !== name)
+      ? e.classList.add('hidden')
+      : e.classList.remove('hidden')
+  });
+}
+
+sections.forEach(x => {
+  const e = document.getElementsByName(x)[0];
+  e.addEventListener('click', () => onActiveSectionChange(x));
+});
+
+const members = [
+  'member-1',
+  'member-2',
+  'member-3'
+];
+
+function onActiveMemberChange(name) {
+	members.forEach(x => {
+	  const e = document.getElementById(x);
+	  (x !== name)
+		? e.classList.add('hidden')
+		: e.classList.remove('hidden')
+	});
+  }
+
+members.forEach(x => {
+  const e = document.getElementsByName(x)[0];
+  e.addEventListener('click', () => onActiveMemberChange(x));
+});

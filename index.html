@@ -4,144 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MathMe</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/page.css">
-    <link rel="stylesheet" href="css/header/header.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
-    <link rel="stylesheet" href="css/content/content.css">
-    <link rel="stylesheet" href="css/about-me.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/learning.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content/content.css">
+    <link rel="stylesheet" href="css/content/svg-navbar.css">
+    <link rel="stylesheet" href="css/content/what-we-can.css">
+    <link rel="stylesheet" href="css/content/team.css">
 </head>
 <body class="page">
-    <div class="header">
-        <svg class="header__menu" width="400" height="200">
-            <defs>
-                <linearGradient id="a" x1="10" y1="0" x2="10" y2="210" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#010057" offset="1%" />
-                    <stop stop-color="white" offset="40%" />
-                </linearGradient>
-                <linearGradient id="b" x1="0" y1="190" x2="400" y2="190" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white" offset="60%"/>
-                    <stop stop-color="#010057" offset="99%"/>
-                </linearGradient>
-                <linearGradient id="grad1">
-                    <stop offset="90%" stop-color="white"/>
-                    <stop offset="100%" stop-color="white" stop-opacity="0" />
-                </linearGradient>
-            </defs>
-            <line class="header__lines" x1="10" y1="0" x2="10" y2="210" stroke="url(#a)" />
-            <line class="header__lines" x1="0" y1="190" x2="400" y2="190" stroke="url(#b)"/>
-            <path class="header__quadratic"  stroke="url(#grad1)" d="M10,190 Q120,190 150,10"/>
-            <text id="blog" class="header__menu-item" x="160" y="90">Блог</text>
-            <text id="learning" class="header__menu-item" x="145" y="130">Обучение</text>
-            <text id="contacts" class="header__menu-item" x="120" y="170">Контакты</text>
-            <circle class="header__pointer" cx="10" cy="190" r="5"/>
-        </svg>
+    <header class="page__header header">
+        <p class="header__math-symbol">&#8747;</p>
+        <h1 class="header__text" id="header-text"></h1>
+    </header>
+    <div class="page__content content">
+        <nav class="content__navbar navbar">
+            <a id="content-1" class="navbar__item" name="about-us">
+                <span>ABOUT US</span>
+            </a>
+            <a id="content-2" class="navbar__item" name="what-we-can">
+                <span>WHAT WE CAN</span>
+            </a>
+            <a id="content-3" class="navbar__item" name="our-projects">
+                <span>OUR PROJECTS</span>
+            </a>
+            <a id="content-4" class="navbar__item" name="team">
+                <span>TEAM</span>
+            </a>
+        </nav>
+        <main class="content__wrapper">
+            <section id="about-us" class="content__section section">
+                <h3 class="section__header">Who we are?</h3>
+                <p class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                </p>
+                <h3 class="section__header">What our goals?</h3>
+                <p class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                </p>
+                <h3 class="section__header">Why we?</h3>
+                <p class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                </p>
+            </section>
+            <section id="what-we-can" class="content__section content__section_radio hidden">
+                <svg class="svg-navbar__menu" width="400" height="400">
+                    <defs>
+                        <linearGradient id="a" x1="10" y1="0" x2="10" y2="310" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" offset="1%" />
+                            <stop stop-color="black" offset="40%" />
+                        </linearGradient>
+                        <linearGradient id="b" x1="0" y1="290" x2="300" y2="290" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="black" offset="60%"/>
+                            <stop stop-color="white" offset="99%"/>
+                        </linearGradient>
+                        <linearGradient id="grad1">
+                            <stop offset="90%" stop-color="black"/>
+                            <stop offset="100%" stop-color="black" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                    <line class="svg-navbar__lines" x1="10" y1="0" x2="10" y2="310" stroke="url(#a)" />
+                    <line class="svg-navbar__lines" x1="0" y1="290" x2="300" y2="290" stroke="url(#b)"/>
+                    <path class="svg-navbar__quadratic"  stroke="url(#grad1)" d="M10,290 Q80,260 100,30"/>
+                    <text class="svg-navbar__menu-item" x="110" y="100">Optimization</text>
+                    <text class="svg-navbar__menu-item" x="100" y="150">Programming</text>
+                    <text class="svg-navbar__menu-item" x="90" y="200">Calculations</text>
+                    <text class="svg-navbar__menu-item" x="75" y="250">Education</text>
+                    <circle class="svg-navbar__pointer" cx="10" cy="290" r="5"/>
+                </svg>
+                <div class="what-we-can">
+                    <input class="controls-input hidden" type="radio" name="point" id="item-1" checked>
+                    <input class="controls-input hidden" type="radio" name="point" id="item-2">
+                    <input class="controls-input hidden" type="radio" name="point" id="item-3">
+                    <input class="controls-input hidden" type="radio" name="point" id="item-4">
+                    <div class="what-we-can__wrapper">
+                        <div class="what-we-can__item">
+                            <h3 class="section__header">Education</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                        </div>
+                        <div class="what-we-can__item">
+                            <h3 class="section__header">Calculations</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                        </div>
+                        <div class="what-we-can__item">
+                            <h3 class="section__header">Programming</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                        </div>
+                        <div class="what-we-can__item">
+                            <h3 class="section__header">Optimization</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="our-projects" class="content__section hidden"></section>
+            <section id="team" class="content__section section hidden">
+                <div class="team">
+                    <div class="team__wrapper">
+                        <div class="team__image-wrapper">
+                            <div class="team__avatar-wrapper">
+                                <img name="member-1" class="team__avatar-image" width="250px" height="250px" src="./img/Aleksandr L.jpg" alt="Aleksandr L.">
+                                <p class="team__avatar-name">Aleksandr Lazovskiy</p>
+                            </div>
+                            <div class="team__avatar-wrapper team__avatar-wrapper_margined">
+                                <img name="member-2" class="team__avatar-image" width="250px" height="250px" src="./img/Ahmad.png" alt="Ahmad">
+                                <p class="team__avatar-name">Ahmad Bashirov</p>
+                            </div>
+                            <div class="team__avatar-wrapper team__avatar-wrapper_margined">
+                                <img name="member-3" class="team__avatar-image" width="250px" height="250px" src="./img/Aleksandr K.PNG" alt="Aleksandr K.">
+                                <p class="team__avatar-name">Aleksandr Kuznetsov</p>
+                            </div>
+                        </div>
+                        <p id="member-1" class="team__member-info">
+                            Aleksandr Lazovskiy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                        </p>
+                        <p id="member-2" class="team__member-info hidden">
+                            Ahmad Bashirov. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                        </p>
+                        <p id="member-3" class="team__member-info hidden">
+                            Aleksandr Kuznetsov. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla nibh eget neque pretium, et pretium ipsum cursus. Morbi condimentum gravida vulputate. Integer imperdiet mi libero, at ultricies tellus vestibulum at. Fusce sit amet sollicitudin ante, at finibus lorem. Integer non vestibulum nisl. Nulla suscipit libero sed dui consectetur, vel tincidunt ante pharetra. Praesent ullamcorper turpis at lorem elementum, non facilisis ex auctor. Nullam molestie, ligula in aliquam iaculis, sapien enim tempor orci, sit amet accumsan dolor erat elementum nulla. Morbi imperdiet velit nulla. In tincidunt nisi vitae elit laoreet gravida. Phasellus nisl mi, tincidunt non augue in, dictum varius lorem.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-    <div class="content">
-        <div class="content__wrapper">
-            <div class="content__block about-me">
-                <div class="about-me__photo"></div>
-                <div class="about-me__info">
-                    <div class="about-me__info-wrapper">
-                        <p class="text">
-                        Я себя считаю математическим агностиком. Что это значит?
-                        </p>
-                        <p class="text">
-                            У меня никогда не было продолжительной привязанности к какой-либо узкой области физико-математических наук. Продолжительной настолько, чтобы редуцировать всю мою фундаментальную математическую базу до специализации эффективного инженера. Я люблю оставаться на плаву не замаранных ГОСТ и чертежами научных абстракций, которые держат голову свободной и позволяют мне максимально гибко адаптироваться к конкретным запросам самых разных клиентов, обучаясь на ходу деталям узкой специализации. Эти запросы включают в себя очень многие разделы математики, классической физики, программирования, механики или каких-то гибридных, нестандартных проектов.
-                        </p>
-                        <p class="text">
-                            Главная черта моего склада ума – фундаментальность. Именно ради постоянной возможности обучиться всему чему угодно, я не позволяю себе стать узким специалистом в чём-то надолго, забыв свои корни. 
-                        </p>
-                        <p class="text">
-                            От этого, конечно же, возникает негативный побочный эффект: мои постоянные расспросы о как можно больших деталях очередного проекта. Клиент иногда ошибочно полагает, что видит перед собой профессионала со специализацией, идеально и максимально жёстко подходящей для области его запросов, и поэтому понимающего задачу с полуслова, без лишних вопросов. Просто потому, что такие задачи – и только такие – пачками решал до этого. Отсюда вывод: я очень ценю людей, идущих на контакт с подробным обсуждением всех, даже не очевидных по началу деталей проекта. Редко было так, чтобы в предоставляемых клиентом документах сразу находилась вся исчерпывающая информация.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content__block blog">
-                <p class="blog__year">2018</p>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 1</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 2</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 3</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 4</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 5</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 6</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 7</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 8</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 9</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 10</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <p class="blog__year">2017</p>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 1</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 2</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 3</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 4</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-                <div class="blog__item">
-                    <a class="blog__theme" href="">Запись 5</a><span class="blog__date">dd/mm/yy</span>
-                </div>
-            </div>
-            <div class="content__block learning">
-                <p class="learning__header">Обучаю следующим дисциплинам:</p>
-                <ul class="learning__disciplines">
-                    <li class="learning__discipline">Математический анализ</li>
-                    <li class="learning__discipline">Линейная алгебра</li>
-                    <li class="learning__discipline">Аналитическая геометрия</li>
-                    <li class="learning__discipline">Векторное исчисление</li>
-                    <li class="learning__discipline">Функциональный анализ</li>
-                </ul>
-            </div>
-            <div class="content__block content__block_flex contacts">
-                <div class="wrapper">
-                    <p class="contacts__header">Контакты</p>
-                    <div class="contacts__contact">
-                        <div class="contacts__img contacts__img_telegram"></div>
-                        <a class="contacts__info">Telegram</a>
-                    </div>
-                    <div class="contacts__contact">
-                        <div class="contacts__img contacts__img_facebook"></div>
-                        <a class="contacts__info">Facebook</a>
-                    </div>
-                    <div class="contacts__contact">
-                        <div class="contacts__img contacts__img_twitter"></div>
-                        <a class="contacts__info">Twitter</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="page__contacts contacts">
+        <a class="contacts__link" href="">
+            <img src="./img/email-icon.svg" width="40px" height="40px" alt="telegram">
+        </a>
+        <a class="contacts__link contacts__link_with-margin" href="">
+            <img src="./img/telegram-icon.svg" width="40px" height="40px" alt="telegram">
+        </a>
+        <a class="contacts__link contacts__link_with-margin" href="">
+            <img src="./img/twitter-icon.svg" width="40px" height="40px" alt="telegram">
+        </a>
     </div>
-    <div class="footer">
-    </div>
-    <script src="js/utils.js"></script>
+    <footer id="particles-js" class="page__footer"></footer>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
