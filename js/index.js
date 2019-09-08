@@ -53,7 +53,7 @@ for (let i = 0; i < menuItems.length; i++) {
 
 
 let i = 0;
-const headerText = 'provide Math to your Business';
+const headerText = 'providing math to your business';
 textElement = document.getElementById('header-text');
 
 function typeWriter() {
